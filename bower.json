@@ -1,0 +1,20 @@
+{
+	"name": "choose-your-own",
+	"description": "",
+	"main": "",
+	"authors": [
+    "Ryan G Ferris <ryanglenferris@gmail.com>"
+  ],
+	"license": "MIT",
+	"homepage": "https://github.com/ryanglenferris/choose-your-dev",
+	"ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+	"dependencies": {
+		"bootstrap": "^4.0.0"
+	}
+}

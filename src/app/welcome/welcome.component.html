@@ -1,0 +1,27 @@
+<h4>Character Creation</h4>
+<label>Name:</label>
+<input type="text" #newName value="test">
+<br>
+<label>Development Focus:</label>
+<select #newFocus>
+  <option [value]="'back'"> Back End </option>
+  <option [value]="'front'"> Front End </option>
+  <option [value]="'devops'"> Dev Ops </option>
+  <option [value]="'management'">Project Management </option>
+</select>
+<br>
+<label>Organized?</label>
+<select #newOrganized>
+  <option [value]="'true'"> yes </option>
+  <option [value]="'false'"> no </option>
+</select>
+<br>
+<label>Communication Style:</label>
+<select #newCommunicationStyle>
+  <option [value]="'direct'"> direct </option>
+  <option [value]="'indirect'"> indirect </option>
+  <option [value]="'hip'"> hip </option>
+  <option [value]="'exaustive'"> exaustive </option>
+</select>
+<br>
+<button (click)="submitForm(newName.value, newFocus.value, newOrganized.value, newCommunicationStyle.value);startUrl();">Begin!</button>

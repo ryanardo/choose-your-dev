@@ -1,0 +1,17 @@
+<h4>Project Proposal</h4>
+<!-- <a href="#"></a> -->
+<p>A rich wealthy individual comes and asks you to run a project for them. Exciting!, What's the first thing you do?</p>
+
+<div class="float-left">
+
+  <ul>
+    <li><a (click)="this.userService.setPoints('story', this.currentUser);" routerLink="/{{userKey}}/story">Get user stories</a></li>
+    <li><a (click)="this.userService.setPoints('bdd', this.currentUser);" routerLink="/{{userKey}}/bdd">Start thinking how you will accomplish the simplest task for the Project, and move on from there</a></li>
+    <li><a (click)="this.userService.setPoints('management', this.currentUser);" routerLink="/{{userKey}}/management">Get a team together</a></li>
+    <li><a (click)="this.userService.setPoints('spaghetti', this.currentUser);" routerLink="/{{userKey}}/spaghetti">START CODING</a></li>
+  </ul>
+</div>
+
+<div class="user-right">
+  <user-display></user-display>
+</div>
